@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --color-tagtext:#883AE1;
+    --color-tagbg:#E6D6FC;
+    --color-border:#E5EAF0;
+    --color-bg:#F5F5F5;
+    --color-white:#FFFFFF;
+    --color-textPrimary:#20293A;
+    --color-textSecondary:#6C727F;
+}
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: var(--color-bg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100dvh;
+   font-family: 'Sora', sans-serif;
+}
+
+.card{
+    max-width: 368px;
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    margin: 0 20px;
+}
+
+.card-body{
+    padding: 16px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 12px;
+    height: 152px;
+    object-fit: cover;
+}
+
+.tag{
+    width: fit-content;    
+    background: var(--color-tagbg);
+    color: var(--color-tagtext);
+    padding: 6px 16px;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 800;
+    margin: 16px 0;
+}
+
+.card h1{
+    font-size: 18px;
+    color: var(--color-textPrimary);
+    margin-bottom: 6px;
+}
+
+.card p{
+    font-size: 14px;
+    color: var(--color-textSecondary);
+    padding-bottom:4px;
+}
+
+.card-footer{
+    font-size: 12px;
+    color: var(--color-textSecondary);
+    padding:16px 16px 20px;
+    border-top: 1px solid var(--color-border);
+   
+}
